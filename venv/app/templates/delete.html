@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>Delete Property Listing</h1>
+<div class="container">
+ <form method="POST" ation="/delete">      
+  <div class="dropdown">
+	<h3><label for="sel1">Select list:</label></h3>
+    	<select name="selectList">
+			<option value="index">index</option>
+			<option value="parcelid">parcelid</option>
+		</select>
+  </div>
+  <div class="dropdown2">
+	<h3><label for="sel2">Operand:</label></h3>
+    	<select name="operand">
+			<option value="=">Equal</option>
+		</select>
+  </div>
+  <div class="value">
+		<h3><label>Value:</label></h3>	
+		<input type="text" name="value">
+		</br>
+  </div>
+  <br/>
+		<input class="btn btn-primary" type="submit" value="Submit">
+		</form>
+		</br>
+		<div> {{ Status }} </div>
+</div>
+
+</body>
+</html>
+

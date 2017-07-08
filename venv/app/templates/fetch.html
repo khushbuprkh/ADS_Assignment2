@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>View Property Listing</h1>
+<div class="container">
+ <form method="POST" ation="/fetch">      
+  <div class="dropdown">
+	<h3><label for="sel1">Select list:</label></h3>
+    	<select name="selectList">
+			<option value="index">index</option>
+			<option value="parcelid">parcelid</option>
+			<option value="bathroomcnt">bathroomcnt</option>
+			<option value="bedroomcnt">bedroomcnt</option>
+			<option value="buildingqualitytypeid">buildingqualitytypeid</option>
+			<option value="calculatedfinishedsquarefeet">calculatedfinishedsquarefeet</option>
+			<option value="fips">fips</a></li>
+			<option value="heatingorsystemtypeid">heatingorsystemtypeid</option>
+			<option value="longitude">longitude</option>
+			<option value="latitude">latitude</option>
+			<option value="lotsizesquarefeet">lotsizesquarefeet</option>
+			<option value="rawcensustractandblock">rawcensustractandblock</option>
+			<option value="regionidcity">regionidcity</option>
+			<option value="regionidcounty">regionidcounty</option>
+			<option value="unitcnt">unitcnt</option>
+			<option value="yearbuilt">yearbuilt</option>
+			<option value="landtaxvaluedollarcnt">landtaxvaluedollarcnt</option>
+			<option value="taxamount">taxamount</option>
+			<option value="censustractandblock">censustractandblock</option>
+		</select>
+  </div>
+  <div class="dropdown2">
+	<h3><label for="sel2">Operand:</label></h3>
+    	<select name="operand">
+			<option value="=">Equal</option>
+			<option value=">">Greater</option>
+			<option value="<">Less</option>
+			<option value="<>">Not Equal</option>
+		</select>
+  </div>
+  <div class="value">
+		<h3><label>Value:</label></h3>	
+		<input type="text" name="value">
+		</br>
+  </div>
+  <br/>
+		<input class="btn btn-primary" type="submit" value="Submit">
+		</form>
+		</br>
+		<div>{{ Status }}</div>
+		<div>  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}</div>
+</div>
+
+</body>
+</html>
+

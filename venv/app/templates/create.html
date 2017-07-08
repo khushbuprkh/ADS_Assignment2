@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+	<div class="container">
+
+		<h2>Zillow Dataset-Team9</h2>
+		<form method="POST" ation="/send">
+		<div class="form-group">
+		        <b>Index:</b>	<input type="text" name="index"class="form-control"></br>
+		</div>
+        <div class="form-group">
+			<b>Parcel Id:</b>	<input type="text" name="parcelid"class="form-control"></br>
+        </div>
+		<div class="form-group">
+		 	<b>Bathroom Count:</b>	<input type="text" name="bathroomcnt"class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Bedroom Count:</b>	<input type="text" name="bedroomcnt" class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Building Quality Type:</b>	<input type="text" name="buildingqualitytypeid" class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Finished Sqft.:</b>	<input type="text" name="calculatedfinishedsquarefeet" class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Fips:</b>	<input type="text" name="fips"class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>HeatingTypeId:</b>	<input type="text" name="heatingorsystemtypeid" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Longitude:</b>	<input type="text" name="longitude" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Latitude:</b>	<input type="text" name="latitude" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Lot size Sqft.:</b>	<input type="text" name="lotsizesquarefeet" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Raw Census Tract & Block:</b>	<input type="text" name="rawcensustractandblock" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>regionidcity:</b> <input type="text" name="regionidcity" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>regionidcounty:</b> <input type="text" name="regionidcounty" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Unit Count:</b>	<input type="text" name="unitcnt" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Year Built:</b>	<input type="text" name="yearbuilt" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Land Tax Value:</b>	<input type="text" name="landtaxvaluedollarcnt" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Tax Amount:</b>	<input type="text" name="taxamount" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			<b>Census Tract & Block:</b>	<input type="text" name="censustractandblock" class="form-control"></br>
+			</div>
+		<div class="form-group">
+			
+		<br/>
+		<input class="btn btn-primary" type="submit" value="Submit">
+		</form>
+		</br>
+		<div><h2>{{ Status }}</h2></div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+ <form method="POST" ation="/fetch"> 
+  <div class="latitude">
+		<h3><label>Latitude:</label></h3>	
+		<input type="text" name="latitude">
+		</br>
+  </div> 
+  <div class="longitude">
+		<h3><label>Longitude:</label></h3>	
+		<input type="text" name="longitude">
+		</br>
+  </div>
+  <br/>
+		<input class="btn btn-primary" type="submit" value="Submit">
+		</form>
+		</br>
+		<div>  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}</div>
+</div>
+
+</body>
+</html>
+
